@@ -1,0 +1,83 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;/* Deixando o rolamento da página mais suave. */
+}
+
+body{
+    background-color: #FFF9EA;
+    overflow-x: hidden;
+}
+  
+
+section{
+    padding: 1.75rem 8%;
+}
+
+
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E39EC2;
+    border-radius: .75rem;
+    padding: .625rem .875rem;
+    font-weight: .625rem;
+    box-shadow: 0rem 0rem .625rem .125rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color .3s easy;
+}
+
+.btn-default:hover{
+    background-color: #f8d477;
+}
+
+.social-media-buttons{
+    display: flex;
+    gap: 1.125rem;
+}
+
+.social-media-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: .625rem;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0rem 0rem .75rem .25rem rgba(0,0,0,0.1);
+    transition: .3s easy;
+}
+
+.whats:hover {
+    color: green;
+    box-shadow: 0rem 0rem .75rem .25rem rgba(4, 148, 16, 0.301);  
+}
+
+.instagram:hover {
+    color: rgb(187, 25, 236);
+    box-shadow: 0rem 0rem .75rem .25rem rgba(187, 25, 236, 0.411);  
+}
+
+.facebook:hover {
+    color: aqua;
+    box-shadow: 0rem 0rem .75rem .25rem rgba(0, 255, 255, 0.336);  
+}
+
+.section-tittle{
+    color:#E39EC2;
+    font-size: 1.563rem;
+}
+
+.section-subtittle{
+    font-size: 2.1875rem;
+}

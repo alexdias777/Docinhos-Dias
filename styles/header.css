@@ -1,0 +1,97 @@
+header {
+    width: 100%;
+    padding: 1.75rem 8%;
+    position: sticky;
+    top: 0;
+    background-color: #E39EC2;
+    z-index: 3;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 1.875rem;
+    color: #E39EC2;
+    -webkit-text-stroke-width: 0.0563rem;
+    -webkit-text-stroke-color: white;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-item {
+    transition: opacity 0.3s ease; /* Transição suave para opacidade */
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+}
+
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: .1875rem solid white;
+}
+
+.chapeu-conf {
+    width: 3%;
+    height: auto;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 73.125rem) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin: 0.75rem 0rem;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+/* Efeito de Transição para o Menu Ativo */
+.nav-item.fade {
+    opacity: 0.5; /* Reduz a opacidade durante a transição */
+}

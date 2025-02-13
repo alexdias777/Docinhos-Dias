@@ -1,0 +1,30 @@
+footer{
+    background: #FFF9EA;
+
+}
+
+footer img{
+    width: 100%;
+    height:7.5rem;
+
+    
+}
+
+#footer_items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 8% 1.5rem 8%;
+    align-items: center;
+}
+
+#copyright{
+    color: #1d1d1d;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 37.5rem){
+    #footer_items{
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
