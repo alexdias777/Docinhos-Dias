@@ -33,15 +33,15 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    font-weight: 600;
-    color: white;
+    font-weight: 800;
+    color: #fff9ea;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: white;
 }
 
 .nav-item.active a {
-    color: #1d1d1d;
-    border-bottom: .1875rem solid white;
+    color: #21af05;
+    border-bottom: .1875rem solid #fff9ea;
 }
 
 .chapeu-conf {

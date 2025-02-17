@@ -10,6 +10,37 @@ footer img{
     
 }
 
+
+
+.footer-efeito {
+    opacity: 0; /* Começa invisível */
+    animation: fadeInOut 10s infinite; /* Animação de 4 segundos, repetindo infinitamente */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Invisível no início */
+        color: black; /* Cor inicial */
+    }
+    20% {
+        opacity: 1; /* Totalmente visível */
+        color: red; /* Cor vermelha */
+    }
+    40% {
+        color: green; /* Cor verde */
+    }
+    60% {
+        color: violet; /* Cor violeta */
+    }
+    80% {
+        color: gray; /* Cor cinza */
+    }
+    100% {
+        opacity: 0; /* Volta a ser invisível */
+        color: black; /* Retorna à cor inicial */
+    }
+}
+
 #footer_items{
     display: flex;
     justify-content: space-between;
@@ -19,7 +50,8 @@ footer img{
 
 #copyright{
     color: #1d1d1d;
-    font-weight: 500;
+    font-weight: 150;
+    font-size: 0.625rem;
 }
 
 @media screen and (max-width: 37.5rem){
