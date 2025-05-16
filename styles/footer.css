@@ -54,6 +54,47 @@ footer img{
     font-size: 0.625rem;
 }
 
+
+/* Voltar ao topo */
+
+#VoltarTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00000000;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s; /* Adicionando transição suave */
+}
+
+#VoltarTopo.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#VoltarTopo .arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(37, 230, 30); /* Cor da seta para cima */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg); /* Roda para cima */
+}
+
+#VoltarTopo.clicked .arrow {
+    border-bottom: 10px solid red; /* Cor durante o clique */
+}
+
+
+  /* Fim  voltar ao topo */
+
 @media screen and (max-width: 37.5rem){
     #footer_items{
         flex-direction: column;
