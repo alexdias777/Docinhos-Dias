@@ -83,7 +83,7 @@ footer img{
     border-right: 10px solid transparent;
     border-bottom: 10px solid rgb(37, 230, 30); /* Cor da seta para cima */
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg); /* Roda para cima */
 }
