@@ -61,8 +61,8 @@ footer img{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #00000000;
-    padding: 10px 15px;
+    background-color:#00000000; ;
+    padding: 15px 25px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
