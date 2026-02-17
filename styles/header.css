@@ -49,49 +49,29 @@ header {
     height: auto;
 }
 
-#mobile_btn {
-    display: none;
-}
 
-#mobile_menu {
-    display: none;
-}
 
-/* Mobile */
-
-@media screen and (max-width: 73.125rem) {
-    #nav_list,
-    #navbar .btn-default {
-        display: none;
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    #nav_list {
+        display: none; /* Esconde a lista de navegação em telas menores */
     }
 
-    #mobile_btn {
-        display: block;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
+
+    #navbar {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        align-items: flex-start; /* Alinha itens à esquerda */
     }
 
-    #mobile_menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-        margin: 0.75rem 0rem;
-    }
-
-    #mobile_nav_list .nav-item {
-        list-style: none;
-        text-align: center;
+    #nav_logo {
+        margin-bottom: 1rem; /* Adiciona espaço abaixo do logo */
     }
 }
 
-/* Efeito de Transição para o Menu Ativo */
-.nav-item.fade {
-    opacity: 0.5; /* Reduz a opacidade durante a transição */
+@media (min-width: 769px) {
+    
+
+    #nav_list {
+        display: flex; /* Exibe a lista de navegação em telas maiores */
+    }
 }

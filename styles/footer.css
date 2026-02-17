@@ -1,20 +1,17 @@
-footer{
-    background: #FFF9EA;
-
+footer {
+    background: #E39EC2; /* Cor de fundo do footer */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    position: relative; /* Permite que o footer se posicione corretamente */
 }
 
-footer img{
+footer img {
     width: 100%;
-    height:7.5rem;
-
-    
+    height: 7.5rem;
 }
-
-
 
 .footer-efeito {
     opacity: 0; /* Começa invisível */
-    animation: fadeInOut 10s infinite; /* Animação de 4 segundos, repetindo infinitamente */
+    animation: fadeInOut 10s infinite; /* Animação de 10 segundos, repetindo infinitamente */
 }
 
 @keyframes fadeInOut {
@@ -41,34 +38,32 @@ footer img{
     }
 }
 
-#footer_items{
+#footer_items {
     display: flex;
     justify-content: space-between;
     padding: 0rem 8% 1.5rem 8%;
     align-items: center;
 }
 
-#copyright{
+#copyright {
     color: #1d1d1d;
     font-weight: 150;
     font-size: 0.625rem;
 }
 
-
-/* Voltar ao topo */
-
+/* Estilo para o botão "Voltar ao topo" */
 #VoltarTopo {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color:#00000000; ;
+    background-color: transparent; /* Fundo transparente */
     padding: 15px 25px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s; /* Adicionando transição suave */
+    transition: opacity 0.3s; /* Transição suave */
 }
 
 #VoltarTopo.visible {
@@ -92,12 +87,10 @@ footer img{
     border-bottom: 10px solid red; /* Cor durante o clique */
 }
 
-
-  /* Fim  voltar ao topo */
-
-@media screen and (max-width: 37.5rem){
-    #footer_items{
-        flex-direction: column;
-        gap: 1.25rem;
+/* Media Queries para Responsividade */
+@media screen and (max-width: 37.5rem) {
+    #footer_items {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        gap: 1.25rem; /* Espaço entre os itens */
     }
 }

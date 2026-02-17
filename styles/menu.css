@@ -6,8 +6,7 @@
     min-height: 100vh;
 }
 
-#dishes{
-    width: 100%;
+#produtos {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -15,8 +14,7 @@
     align-items: center;
 }
 
-
-.dish{
+.produto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,14 +29,14 @@
     overflow: hidden;
 }
 
-.dish-heart{  
+.ProdutoDiversos {
     position: absolute;
     background-color: #E39EC2;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.56;
-    color:#fff9ea;
+    color: #fff9ea;
     width: 4.375rem;
     height: 4.375rem;
     right: -0.625rem;
@@ -46,34 +44,33 @@
     border-radius: 0rem 2.3438rem 0rem 42.5rem;
 }
 
-.dish-description{
+.produtosDescricao {
     color: #434343;
     text-align: center;
 }
 
-.dish-rate i{
+.produtosEstrelinha i {
     color: #e9a209;
 }
 
-.dish-price{
+.produtosValor {
     display: flex;
     align-items: center;
     gap: 1.25rem;
 }
 
 @media screen and (max-width: 73.125rem) {
-    #dishes{
+    #produtos {
         flex-wrap: wrap;
         justify-content: center;
-
     }
-    .dish{
-        width:calc(50% - 0.75rem);
+    .produto {
+        width: calc(50% - 0.75rem);
     }
 }
 
-@media screen and (max-width: 37.5rem){
-    .dish{
+@media screen and (max-width: 37.5rem) {
+    .produto {
         width: calc(100%);
     }
 

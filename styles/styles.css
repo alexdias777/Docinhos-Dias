@@ -1,83 +1,191 @@
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Estilo global */
+* {
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
 }
 
-
-html{
-    scroll-behavior: smooth;/* Deixando o rolamento da página mais suave. */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
+    background-color: #FFF9EA; /* Cor de fundo do corpo */
+    overflow-x: hidden; /* Impede rolagem horizontal */
 }
 
-body{
-    background-color: #FFF9EA;
-    overflow-x: hidden;
-}
-  
-
-section{
-    padding: 1.75rem 8%;
-}
-
-
-.btn-default{
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #E39EC2;
-    border-radius: .75rem;
-    padding: .625rem .875rem;
-    font-weight: .625rem;
-    box-shadow: 0rem 0rem .625rem .125rem rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: background-color .3s easy;
+/* Estilo do cabeçalho */
+header {
+    background-color: #fff; /* Cor de fundo do cabeçalho */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra do cabeçalho */
+    position: sticky; /* Mantém o cabeçalho fixo no topo */
+    top: 0; /* Posiciona no topo */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
 }
 
-.btn-default:hover{
-    background-color: #f8d477;
+/* Estilo do menu de navegação */
+nav {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 1rem; /* Preenchimento interno */
 }
 
-.social-media-buttons{
-    display: flex;
-    gap: 1.125rem;
+/* Estilo para o logotipo */
+#nav_logo {
+    font-size: 1.5rem; /* Tamanho da fonte do logotipo */
 }
 
-.social-media-buttons a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 2.5rem;
-    border-radius: .625rem;
-    text-decoration: none;
-    color: #1d1d1d;
-    box-shadow: 0rem 0rem .75rem .25rem rgba(0,0,0,0.1);
-    transition: .3s easy;
+/* Estilo da lista de navegação */
+#nav_list {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Exibe os itens em linha */
 }
 
-.whats:hover {
-    color: green;
-    box-shadow: 0rem 0rem .75rem .25rem rgba(4, 148, 16, 0.301);  
+/* Estilo dos itens da lista de navegação */
+.nav-item {
+    margin: 0 1rem; /* Margem horizontal entre os itens */
 }
 
-.instagram:hover {
-    color: rgb(187, 25, 236);
-    box-shadow: 0rem 0rem .75rem .25rem rgba(187, 25, 236, 0.411);  
+/* Estilo dos links de navegação */
+.nav-item a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Negrito */
 }
 
-.facebook:hover {
-    color: aqua;
-    box-shadow: 0rem 0rem .75rem .25rem rgba(0, 255, 255, 0.336);  
+/* Efeito de hover nos links de navegação */
+.nav-item a:hover {
+    color: #E39EC2; /* Cor ao passar o mouse */
 }
 
-.section-tittle{
-    color:#E39EC2;
-    font-size: 1.563rem;
+/* Estilo do conteúdo principal */
+#content {
+    padding: 2rem; /* Preenchimento interno */
 }
 
-.section-subtittle{
-    font-size: 2.1875rem;
+/* Estilo da seção de produtos */
+#produtos {
+    margin-top: 2rem; /* Margem superior */
+}
+
+/* Estilo do grid de produtos */
+.grid {
+    display: grid; /* Define o grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colunas responsivas */
+    gap: 1.5rem; /* Espaçamento entre os itens do grid */
+}
+
+/* Estilo dos produtos */
+.produto {
+    background-color: #ffffff; /* Cor de fundo do produto */
+    border-radius: 1.25rem; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra do produto */
+    padding: 1.25rem; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo das imagens dos produtos */
+.dish-img {
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática */
+    border-radius: 1.25rem; /* Bordas arredondadas */
+}
+
+/* Estilo do título do produto */
+.produtosTitulo {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin: 0.5rem 0; /* Margem vertical */
+}
+
+/* Estilo da descrição do produto */
+.produtosDescricao {
+    color: #434343; /* Cor do texto */
+}
+
+/* Estilo das estrelas de avaliação */
+.produtosEstrelinha i {
+    color: #e9a209; /* Cor das estrelas */
+}
+
+/* Estilo do valor do produto */
+.produtosValor {
+    margin-top: 0.5rem; /* Margem superior */
+}
+
+/* Estilo da seção de descrição */
+#descricao {
+    display: flex; /* Exibe em linha */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Alinha centralmente */
+    margin: 2rem 0; /* Margem vertical */
+}
+
+/* Estilo da seção de feedbacks */
+#feedbacks {
+    width: 100%; /* Largura total */
+}
+
+/* Estilo do carrinho de compras */
+#carrinho {
+    margin-top: 2rem; /* Margem superior */
+}
+
+#carrinho_conteudo {
+    margin: 1rem 0; /* Margem vertical */
+}
+
+/* Estilo do total no carrinho */
+#total {
+    margin-top: 1rem; /* Margem superior */
+    font-weight: bold; /* Negrito */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    text-align: right; /* Alinhamento à direita */
+}
+
+#total h3 {
+    margin: 0; /* Remove a margem padrão do h3 */
+    color: black; /* Cor do texto */
+}
+
+/* Estilo do valor total */
+#total_valor {
+    color: #FF5733; /* Cor específica para o valor total */
+    font-weight: bold; /* Negrito para o valor */
+}
+
+table {
+    width: 100%; /* Largura total */
+    border-collapse: collapse; /* Remove espaçamento entre bordas */
+}
+
+th, td {
+    padding: 0.75rem; /* Preenchimento interno */
+    border: 1px solid #ddd; /* Borda das células */
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+#total {
+    margin-top: 1rem; /* Margem superior */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #fff; /* Cor de fundo do rodapé */
+    padding: 1rem; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo dos botões de redes sociais */
+.social-media-buttons {
+    display: flex; /* Exibe os botões em linha */
+    gap: 1rem; /* Espaçamento entre os botões */
+}
+
+.social-media-buttons a {
+    color: #333; /* Cor padrão dos ícones */
+    font-size: 1.5rem; /* Tamanho dos ícones */
+}
+
+.social-media-buttons a:hover {
+    color: #E39EC2; /* Cor ao passar o mouse */
 }
