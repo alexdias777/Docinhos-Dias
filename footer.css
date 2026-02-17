@@ -1,0 +1,96 @@
+footer {
+    background: #E39EC2; /* Cor de fundo do footer */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    position: relative; /* Permite que o footer se posicione corretamente */
+}
+
+footer img {
+    width: 100%;
+    height: 7.5rem;
+}
+
+#footer-efeito {
+    opacity: 0; /* Começa invisível */
+    animation: fadeInOut 10s infinite; /* Animação de 10 segundos, repetindo infinitamente */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Invisível no início */
+        color: black; /* Cor inicial */
+    }
+    20% {
+        opacity: 1; /* Totalmente visível */
+        color: red; /* Cor vermelha */
+    }
+    40% {
+        color: green; /* Cor verde */
+    }
+    60% {
+        color: violet; /* Cor violeta */
+    }
+    80% {
+        color: gray; /* Cor cinza */
+    }
+    100% {
+        opacity: 0; /* Volta a ser invisível */
+        color: black; /* Retorna à cor inicial */
+    }
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 8% 1.5rem 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: #1d1d1d;
+    font-weight: 150;
+    font-size: 0.625rem;
+}
+
+/* Estilo para o botão "Voltar ao topo" */
+#VoltarTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent; /* Fundo transparente */
+    padding: 15px 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s; /* Transição suave */
+}
+
+#VoltarTopo.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#VoltarTopo .arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(37, 230, 30); /* Cor da seta para cima */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg); /* Roda para cima */
+}
+
+#VoltarTopo.clicked .arrow {
+    border-bottom: 10px solid red; /* Cor durante o clique */
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 37.5rem) {
+    #footer_items {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        gap: 1.25rem; /* Espaço entre os itens */
+    }
+}
