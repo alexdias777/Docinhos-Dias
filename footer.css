@@ -1,7 +1,7 @@
 footer {
-    background: #E39EC2; /* Cor de fundo do footer */
-    width: 100%; /* Garante que o footer ocupe toda a largura */
-    position: relative; /* Permite que o footer se posicione corretamente */
+    background: #E39EC2; 
+    width: 100%; 
+    position: relative; 
 }
 
 footer img {
@@ -10,8 +10,8 @@ footer img {
 }
 
 #footer-efeito {
-    opacity: 0; /* Começa invisível */
-    animation: fadeInOut 10s infinite; /* Animação de 10 segundos, repetindo infinitamente */
+    opacity: 0; 
+    animation: fadeInOut 10s infinite; 
 }
 
 @keyframes fadeInOut {
@@ -56,14 +56,14 @@ footer img {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: transparent; /* Fundo transparente */
+    background-color: transparent; 
     padding: 15px 25px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s; /* Transição suave */
+    transition: opacity 0.3s; 
 }
 
 #VoltarTopo.visible {
@@ -90,7 +90,7 @@ footer img {
 /* Media Queries para Responsividade */
 @media screen and (max-width: 37.5rem) {
     #footer_items {
-        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        flex-direction: column; 
         gap: 1.25rem; /* Espaço entre os itens */
     }
 }
